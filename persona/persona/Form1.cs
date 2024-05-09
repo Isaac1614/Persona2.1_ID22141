@@ -41,5 +41,40 @@ namespace persona
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_validar_Click(object sender, EventArgs e)
+        {
+            if (radioButton_empleado.Checked)
+            {
+                Empleado emple1 = new Empleado();
+            }
+            else 
+            {
+                if (radioButton_alumno.Checked)
+                {
+                    Alumno alum1 = new Alumno();
+                }
+                else
+                {
+                    if (radioButton_docente.Checked)
+                    {
+                        Docente docente1 = new Docente();
+                    }
+                    else
+                    {
+                        if (radioButton_persona.Checked)
+                        {
+                            Persona per1 = new Persona(string Nombre,string Edad,string FechaNac);
+                        }
+                    }
+                }
+            }
+
+        }
     }
 }
