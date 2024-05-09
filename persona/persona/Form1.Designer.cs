@@ -46,13 +46,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.btn_validar = new System.Windows.Forms.Button();
             this.radioButton_docente = new System.Windows.Forms.RadioButton();
             this.radioButton_alumno = new System.Windows.Forms.RadioButton();
             this.radioButton_empleado = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -262,6 +262,17 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(39, 16);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(242, 23);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Seleccione el tipo de persona";
+            // 
             // btn_validar
             // 
             this.btn_validar.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -319,11 +330,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::persona.Properties.Resources.EMPLEADO;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.BackgroundImage = global::persona.Properties.Resources.alumno;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(53, 44);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(171, 190);
+            this.pictureBox1.Size = new System.Drawing.Size(153, 184);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -338,17 +349,6 @@
             this.label7.Size = new System.Drawing.Size(254, 34);
             this.label7.TabIndex = 3;
             this.label7.Text = "Registro de personas";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(39, 16);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(242, 23);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Seleccione el tipo de persona";
             // 
             // Form1
             // 

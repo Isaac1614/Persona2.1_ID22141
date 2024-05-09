@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Windows.Forms;
-
+//Comentario de guardado
 namespace persona
 {
     class Persona //clase padre
@@ -95,17 +95,17 @@ namespace persona
         public string MatriculaDocente
         {
             get { return matriculaDocente; }
-            set { MatriculaDocente = value;}
+            set { MatriculaDocente = value; }//Se guarda en memoria 
         }
         public string CarreraDocente
         {
             get { return carreraDocente; }
-            set { CarreraDocente = value;}
+            set { CarreraDocente = value; }//Se guarda en memoria 
         }
         public int SueldoDocente 
         {
             get { return sueldoDocente; }
-            set { SueldoDocente = value; }
+            set { SueldoDocente = value; }//Se guarda en memoria 
         }
         //colocar todos los comentarios necesarios para exlicar
         //el funcinamiento de su código
