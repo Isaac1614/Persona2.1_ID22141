@@ -292,6 +292,7 @@
             // radioButton_docente
             // 
             this.radioButton_docente.AutoSize = true;
+            this.radioButton_docente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton_docente.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_docente.ForeColor = System.Drawing.Color.White;
             this.radioButton_docente.Location = new System.Drawing.Point(6, 108);
@@ -305,6 +306,7 @@
             // radioButton_alumno
             // 
             this.radioButton_alumno.AutoSize = true;
+            this.radioButton_alumno.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton_alumno.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_alumno.ForeColor = System.Drawing.Color.White;
             this.radioButton_alumno.Location = new System.Drawing.Point(6, 79);
@@ -318,6 +320,7 @@
             // radioButton_empleado
             // 
             this.radioButton_empleado.AutoSize = true;
+            this.radioButton_empleado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton_empleado.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_empleado.ForeColor = System.Drawing.Color.White;
             this.radioButton_empleado.Location = new System.Drawing.Point(6, 50);
@@ -365,6 +368,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

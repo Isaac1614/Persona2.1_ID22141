@@ -8,3 +8,13 @@ C:\Users\arsek\Documents\Semestre 4\POO\persona\persona\obj\Debug\persona.csproj
 C:\Users\arsek\Documents\Semestre 4\POO\persona\persona\obj\Debug\persona.csproj.CoreCompileInputs.cache
 C:\Users\arsek\Documents\Semestre 4\POO\persona\persona\obj\Debug\persona.exe
 C:\Users\arsek\Documents\Semestre 4\POO\persona\persona\obj\Debug\persona.pdb
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\bin\Debug\persona.exe.config
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\bin\Debug\persona.exe
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\bin\Debug\persona.pdb
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\obj\Debug\persona.csproj.AssemblyReference.cache
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\obj\Debug\persona.Form1.resources
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\obj\Debug\persona.Properties.Resources.resources
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\obj\Debug\persona.csproj.GenerateResource.cache
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\obj\Debug\persona.csproj.CoreCompileInputs.cache
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\obj\Debug\persona.exe
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\obj\Debug\persona.pdb
