@@ -104,12 +104,16 @@ namespace persona
 
         private void radioButton_alumno_CheckedChanged(object sender, EventArgs e)
         {
+            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Persona2.1_ID22141\\persona\\persona\\imagenes\\alumno.jpg";
+            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
             label6.Visible = false;
             textBox_Sueldo.Visible = false;
         }
 
         private void radioButton_persona_CheckedChanged(object sender, EventArgs e)
         {
+            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Persona2.1_ID22141\\persona\\persona\\imagenes\\alumno2.jpg";
+            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
             label4.Visible = false;
             textBox_DNIMAT.Visible = false;
             label5.Visible = false;
@@ -120,6 +124,8 @@ namespace persona
 
         private void radioButton_docente_CheckedChanged(object sender, EventArgs e)
         {
+            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Persona2.1_ID22141\\persona\\persona\\imagenes\\DOCENTE.jpg";
+            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
             label4.Visible = true;
             textBox_DNIMAT.Visible = true;
             label5.Visible = true;
@@ -130,6 +136,8 @@ namespace persona
 
         private void radioButton_empleado_CheckedChanged(object sender, EventArgs e)
         {
+            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Persona2.1_ID22141\\persona\\persona\\imagenes\\EMPLEADO.jpg";
+            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
             label4.Visible = true;
             textBox_DNIMAT.Visible = true;
             label5.Visible = true;
@@ -140,8 +148,8 @@ namespace persona
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //C:\Users\arsek\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\imagenes\Capturadebolaamarilla.png
-            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Persona2.1_ID22141\\persona\\persona\\imagenes\\";
+            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Persona2.1_ID22141\\persona\\persona\\imagenes\\Capturadebolaamarilla.png";
+            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
         }
     }
 }
