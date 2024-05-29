@@ -140,6 +140,7 @@ namespace persona
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //C:\Users\arsek\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\imagenes\Capturadebolaamarilla.png
             string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Persona2.1_ID22141\\persona\\persona\\imagenes\\";
         }
     }
