@@ -22,17 +22,17 @@ namespace persona
         public string Nombre
         {
             get { return nombre; } //Vamos por el valor en la caja de texto
-            set { Nombre = value; }//Se guarda en memoria 
+            set { nombre = value; }//Se guarda en memoria 
         }
         public string Edad
         {
             get { return edad; }//Vamos por el valor en la caja de texto
-            set { Edad = value; }//Se guarda en memoria 
+            set { edad = value; }//Se guarda en memoria 
         }
         public string FechaNac
         {
             get { return fechaNac; }//Vamos por el valor en la caja de texto
-            set { FechaNac = value; }//Se guarda en memoria 
+            set { fechaNac = value; }//Se guarda en memoria 
         }
     }
 
@@ -46,12 +46,20 @@ namespace persona
         public string Matricula
         {
             get { return matricula; }//Vamos por el valor en la caja de texto
-            set { Matricula = value; }//Se guarda en memoria 
+            set { matricula = value; }//Se guarda en memoria 
         }
         protected string Carrera
         {
             get { return carrera; }//Vamos por el valor en la caja de texto
-            set { Carrera = value; }//Se guarda en memoria 
+            set { carrera = value; }//Se guarda en memoria 
+        }
+        public Alumno(string nombre,string edad,string fechaNac,string matricula,string carera)
+        {
+            Nombre = nombre; 
+            Edad=edad;
+            FechaNac = fechaNac;
+            Carrera = carera;
+            Matricula = matricula;
         }
         //colocar todos los comentarios necesarios para exlicar
         //el funcinamiento de su código
@@ -61,24 +69,26 @@ namespace persona
 
         //variables
         //atributos
-        protected string dni;
         protected string puesto;
-        protected int sueldo;
+        protected float sueldo;
         //metodos
-        public string DNI
-        {
-            get { return dni; }//Vamos por el valor en la caja de texto
-            set { DNI = value; }//Se guarda en memoria 
-        }
         public string Puesto
         {
             get { return puesto; }//Vamos por el valor en la caja de texto
-            set { Puesto = value; }//Se guarda en memoria 
+            set { puesto = value; }//Se guarda en memoria 
         }
-        public int Sueldo
+        public float Sueldo
         {
             get { return sueldo; }//Vamos por el valor en la caja de texto
-            set { Sueldo = value; }//Se guarda en memoria 
+            set { sueldo = value; }//Se guarda en memoria 
+        }
+        public Empleado(string nombre, string edad, string fechaNac, string puesto, float sueldo)
+        {
+            Nombre = nombre;
+            Edad = edad;
+            FechaNac = fechaNac;
+            Puesto=puesto;
+            Sueldo = sueldo;
         }
         //colocar todos los comentarios necesarios para exlicar
         //el funcinamiento de su código
@@ -88,24 +98,26 @@ namespace persona
     {
         //variables
         //atributos
-        protected string matriculaDocente;
-        protected string carreraDocente;
-        protected int sueldoDocente;
+        protected string puesto;
+        protected float sueldo;
         //metodos
-        public string MatriculaDocente
+        public string Puesto
         {
-            get { return matriculaDocente; }
-            set { MatriculaDocente = value; }//Se guarda en memoria 
+            get { return puesto; }
+            set { puesto = value; }//Se guarda en memoria 
         }
-        public string CarreraDocente
+        public float Sueldo 
         {
-            get { return carreraDocente; }
-            set { CarreraDocente = value; }//Se guarda en memoria 
+            get { return sueldo; }
+            set { sueldo = value; }//Se guarda en memoria 
         }
-        public int SueldoDocente 
+        public Docente(string nombre, string edad, string fechaNac, string puesto, float sueldo)
         {
-            get { return sueldoDocente; }
-            set { SueldoDocente = value; }//Se guarda en memoria 
+            Nombre = nombre;
+            Edad = edad;
+            FechaNac = fechaNac;
+            Puesto = puesto;
+            Sueldo = sueldo;
         }
         //colocar todos los comentarios necesarios para exlicar
         //el funcinamiento de su código

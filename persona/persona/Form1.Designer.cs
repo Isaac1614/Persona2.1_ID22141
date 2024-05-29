@@ -46,6 +46,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButton_persona = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.btn_validar = new System.Windows.Forms.Button();
             this.radioButton_docente = new System.Windows.Forms.RadioButton();
@@ -53,7 +54,6 @@
             this.radioButton_empleado = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.radioButton_persona = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -264,6 +264,21 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
+            // radioButton_persona
+            // 
+            this.radioButton_persona.AutoSize = true;
+            this.radioButton_persona.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton_persona.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton_persona.ForeColor = System.Drawing.Color.White;
+            this.radioButton_persona.Location = new System.Drawing.Point(156, 50);
+            this.radioButton_persona.Name = "radioButton_persona";
+            this.radioButton_persona.Size = new System.Drawing.Size(132, 23);
+            this.radioButton_persona.TabIndex = 5;
+            this.radioButton_persona.TabStop = true;
+            this.radioButton_persona.Text = "Soy una persona";
+            this.radioButton_persona.UseVisualStyleBackColor = true;
+            this.radioButton_persona.CheckedChanged += new System.EventHandler(this.radioButton_persona_CheckedChanged);
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -305,6 +320,7 @@
             this.radioButton_docente.TabStop = true;
             this.radioButton_docente.Text = "Soy docente";
             this.radioButton_docente.UseVisualStyleBackColor = true;
+            this.radioButton_docente.CheckedChanged += new System.EventHandler(this.radioButton_docente_CheckedChanged);
             // 
             // radioButton_alumno
             // 
@@ -319,6 +335,7 @@
             this.radioButton_alumno.TabStop = true;
             this.radioButton_alumno.Text = "Soy un alumno";
             this.radioButton_alumno.UseVisualStyleBackColor = true;
+            this.radioButton_alumno.CheckedChanged += new System.EventHandler(this.radioButton_alumno_CheckedChanged);
             // 
             // radioButton_empleado
             // 
@@ -333,6 +350,7 @@
             this.radioButton_empleado.TabStop = true;
             this.radioButton_empleado.Text = "Soy un empleado";
             this.radioButton_empleado.UseVisualStyleBackColor = true;
+            this.radioButton_empleado.CheckedChanged += new System.EventHandler(this.radioButton_empleado_CheckedChanged);
             // 
             // pictureBox1
             // 
@@ -356,20 +374,6 @@
             this.label7.Size = new System.Drawing.Size(254, 34);
             this.label7.TabIndex = 3;
             this.label7.Text = "Registro de personas";
-            // 
-            // radioButton_persona
-            // 
-            this.radioButton_persona.AutoSize = true;
-            this.radioButton_persona.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton_persona.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_persona.ForeColor = System.Drawing.Color.White;
-            this.radioButton_persona.Location = new System.Drawing.Point(156, 50);
-            this.radioButton_persona.Name = "radioButton_persona";
-            this.radioButton_persona.Size = new System.Drawing.Size(132, 23);
-            this.radioButton_persona.TabIndex = 5;
-            this.radioButton_persona.TabStop = true;
-            this.radioButton_persona.Text = "Soy una persona";
-            this.radioButton_persona.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

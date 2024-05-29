@@ -18,3 +18,13 @@ C:\Users\Licenciaturas\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona
 C:\Users\Licenciaturas\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\obj\Debug\persona.csproj.CoreCompileInputs.cache
 C:\Users\Licenciaturas\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\obj\Debug\persona.exe
 C:\Users\Licenciaturas\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\obj\Debug\persona.pdb
+C:\Users\arsek\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\bin\Debug\persona.exe.config
+C:\Users\arsek\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\bin\Debug\persona.exe
+C:\Users\arsek\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\bin\Debug\persona.pdb
+C:\Users\arsek\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\obj\Debug\persona.csproj.AssemblyReference.cache
+C:\Users\arsek\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\obj\Debug\persona.Form1.resources
+C:\Users\arsek\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\obj\Debug\persona.Properties.Resources.resources
+C:\Users\arsek\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\obj\Debug\persona.csproj.GenerateResource.cache
+C:\Users\arsek\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\obj\Debug\persona.csproj.CoreCompileInputs.cache
+C:\Users\arsek\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\obj\Debug\persona.exe
+C:\Users\arsek\Source\Repos\Isaac1614\Persona2.1_ID22141\persona\persona\obj\Debug\persona.pdb
