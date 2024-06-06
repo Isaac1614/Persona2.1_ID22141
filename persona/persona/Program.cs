@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Windows.Forms;
+using System.IO;
 //Comentario de guardado
 namespace persona
 {
@@ -34,6 +35,23 @@ namespace persona
             get { return fechaNac; }//Vamos por el valor en la caja de texto
             set { fechaNac = value; }//Se guarda en memoria 
         }
+        /*public void guardar_info_persona()
+        {
+            try
+            {
+                string fileName = @"C:\Users\Licenciaturas\source\repos\Isaac1614\Persona2.1_ID22141\persona\persona\archivostxt\RegistroPersona.txt";
+                StreamWriter writer = File.AppendText(fileName);
+                writer.WriteLine("Nombre: " + Nombre);
+                writer.WriteLine("Edad: " + Edad);
+                writer.WriteLine("Fecha de nacimiento: " + FechaNac);
+                writer.WriteLine("\n");
+                writer.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Error al guardar datos en el archivo: Archivo: RegistroAlumnos.txt", "Error 404", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }*/
     }
 
     class Alumno : Persona //clase hija alumno
@@ -61,6 +79,25 @@ namespace persona
             Carrera = carera;
             Matricula = matricula;
         }
+        public void guardar_info_alumnos()
+        {
+            try
+            {
+                string fileName = @"C:\Users\Licenciaturas\source\repos\Isaac1614\Persona2.1_ID22141\persona\persona\archivostxt\RegistroAlumnos.txt";
+                StreamWriter writer=File.AppendText(fileName);
+                writer.WriteLine("Nombre: "+Nombre);
+                writer.WriteLine("Edad: " + Edad);
+                writer.WriteLine("Fecha de nacimiento: " + FechaNac);
+                writer.WriteLine("Carrera: " + Carrera);
+                writer.WriteLine("Matricula: " + Matricula);
+                writer.WriteLine("\n");
+                writer.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Error al guardar datos en el archivo: Archivo: RegistroAlumnos.txt","Error 404",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+        }
         //colocar todos los comentarios necesarios para exlicar
         //el funcinamiento de su código
     }
@@ -71,7 +108,13 @@ namespace persona
         //atributos
         protected string puesto;
         protected float sueldo;
+        protected string dni;
         //metodos
+        public string DNI
+        {
+            get { return dni; }//Vamos por el valor en la caja de texto
+            set { dni = value; }//Se guarda en memoria 
+        }
         public string Puesto
         {
             get { return puesto; }//Vamos por el valor en la caja de texto
@@ -82,14 +125,36 @@ namespace persona
             get { return sueldo; }//Vamos por el valor en la caja de texto
             set { sueldo = value; }//Se guarda en memoria 
         }
-        public Empleado(string nombre, string edad, string fechaNac, string puesto, float sueldo)
+        public Empleado(string nombre, string edad, string fechaNac,string dni, string puesto, float sueldo)
         {
             Nombre = nombre;
             Edad = edad;
             FechaNac = fechaNac;
+            DNI = dni;
             Puesto=puesto;
             Sueldo = sueldo;
         }
+        public void guardar_info_empleado()
+        {
+            try
+            {
+                string fileName = @"C:\Users\Licenciaturas\source\repos\Isaac1614\Persona2.1_ID22141\persona\persona\archivostxt\RegistroEmpleados.txt";
+                StreamWriter writer = File.AppendText(fileName);
+                writer.WriteLine("Nombre: " + Nombre);
+                writer.WriteLine("Edad: " + Edad);
+                writer.WriteLine("Fecha de nacimiento: " + FechaNac);
+                writer.WriteLine("DNI: " + DNI);
+                writer.WriteLine("Puesto: " + Puesto);
+                writer.WriteLine("Sueldo: " + Sueldo);
+                writer.WriteLine("\n");
+                writer.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Error al guardar datos en el archivo: Archivo: RegistroEmpleados.txt", "Error 404", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         //colocar todos los comentarios necesarios para exlicar
         //el funcinamiento de su código
     }
@@ -100,6 +165,7 @@ namespace persona
         //atributos
         protected string puesto;
         protected float sueldo;
+        protected string matricula;
         //metodos
         public string Puesto
         {
@@ -111,16 +177,43 @@ namespace persona
             get { return sueldo; }
             set { sueldo = value; }//Se guarda en memoria 
         }
-        public Docente(string nombre, string edad, string fechaNac, string puesto, float sueldo)
+        public string Matricula
+        {
+            get { return matricula; }//Vamos por el valor en la caja de texto
+            set { matricula = value; }//Se guarda en memoria 
+        }
+        public Docente(string nombre, string edad, string fechaNac,string matricula, string puesto, float sueldo)
         {
             Nombre = nombre;
             Edad = edad;
             FechaNac = fechaNac;
+            Matricula = matricula;
             Puesto = puesto;
             Sueldo = sueldo;
         }
+        public void guardar_info_docente()
+        {
+            try
+            {
+                string fileName = @"C:\Users\Licenciaturas\source\repos\Isaac1614\Persona2.1_ID22141\persona\persona\archivostxt\RegistroDocentes.txt";
+                StreamWriter writer = File.AppendText(fileName);
+                writer.WriteLine("Nombre: " + Nombre);
+                writer.WriteLine("Edad: " + Edad);
+                writer.WriteLine("Fecha de nacimiento: " + FechaNac);
+                writer.WriteLine("Matricula: " + Matricula);
+                writer.WriteLine("Puesto: " + Puesto);
+                writer.WriteLine("Sueldo: " + Sueldo);
+                writer.WriteLine("\n");
+                writer.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Error al guardar datos en el archivo: Archivo: RegistroDocentes.txt", "Error 404", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         //colocar todos los comentarios necesarios para exlicar
         //el funcinamiento de su código
+
     }
     internal static class Program
     {

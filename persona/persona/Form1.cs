@@ -67,6 +67,7 @@ namespace persona
                 string mat = textBox_DNIMAT.Text;
                 string carrera = textBox_CarPues.Text;
                 Alumno alumno = new Alumno(nom, fech, edad, mat, carrera);
+                alumno.guardar_info_alumnos();
             }
             else 
             {
@@ -75,10 +76,11 @@ namespace persona
                     string nom = textBox_nombre.Text;
                     string fech = textBox_fechaNac.Text;
                     string edad = textBox_edad.Text;
-                    string mat = textBox_DNIMAT.Text;
+                    string dni = textBox_DNIMAT.Text;
                     string puesto = textBox_CarPues.Text;
                     float sueldo = Convert.ToSingle(textBox_Sueldo.Text);
-                    Empleado empleado = new Empleado(nom, fech, edad, puesto, sueldo);
+                    Empleado empleado = new Empleado(nom, fech, edad,dni, puesto, sueldo);
+                    empleado.guardar_info_empleado();
                 }
                 else
                 {
@@ -90,13 +92,15 @@ namespace persona
                         string mat = textBox_DNIMAT.Text;
                         string puesto = textBox_CarPues.Text;
                         float sueldo = Convert.ToSingle(textBox_Sueldo.Text);
-                        Docente docente = new Docente(nom, fech, edad, puesto, sueldo);
+                        Docente docente = new Docente(nom, fech, edad,mat, puesto, sueldo);
+                        docente.guardar_info_docente();
                     }
                     else
                     {
                         string nom = textBox_nombre.Text;
                         string fech = textBox_fechaNac.Text;
                         string edad = textBox_edad.Text;
+                        
                     }
                 }
             }
@@ -104,15 +108,19 @@ namespace persona
 
         private void radioButton_alumno_CheckedChanged(object sender, EventArgs e)
         {
-            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Persona2.1_ID22141\\persona\\persona\\imagenes\\alumno.jpg";
+            string rutaImagen = "C:\\Users\\Licenciaturas\\Source\\Repos\\Isaac1614\\Persona2.1_ID22141\\persona\\persona\\imagenes\\alumno.jpg";
             pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+            label4.Visible = true;
+            textBox_DNIMAT.Visible = true;
+            label5.Visible = true;
+            textBox_CarPues.Visible = true;
             label6.Visible = false;
             textBox_Sueldo.Visible = false;
         }
 
         private void radioButton_persona_CheckedChanged(object sender, EventArgs e)
         {
-            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Persona2.1_ID22141\\persona\\persona\\imagenes\\alumno2.jpg";
+            string rutaImagen = "C:\\Users\\Licenciaturas\\Source\\Repos\\Isaac1614\\Persona2.1_ID22141\\persona\\persona\\imagenes\\alumno2.jpg";
             pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
             label4.Visible = false;
             textBox_DNIMAT.Visible = false;
@@ -124,7 +132,7 @@ namespace persona
 
         private void radioButton_docente_CheckedChanged(object sender, EventArgs e)
         {
-            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Persona2.1_ID22141\\persona\\persona\\imagenes\\DOCENTE.jpg";
+            string rutaImagen = "C:\\Users\\Licenciaturas\\Source\\Repos\\Isaac1614\\Persona2.1_ID22141\\persona\\persona\\imagenes\\DOCENTE.jpg";
             pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
             label4.Visible = true;
             textBox_DNIMAT.Visible = true;
@@ -136,7 +144,7 @@ namespace persona
 
         private void radioButton_empleado_CheckedChanged(object sender, EventArgs e)
         {
-            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Persona2.1_ID22141\\persona\\persona\\imagenes\\EMPLEADO.jpg";
+            string rutaImagen = "C:\\Users\\Licenciaturas\\Source\\Repos\\Isaac1614\\Persona2.1_ID22141\\persona\\persona\\imagenes\\EMPLEADO.jpg";
             pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
             label4.Visible = true;
             textBox_DNIMAT.Visible = true;
@@ -148,7 +156,7 @@ namespace persona
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Persona2.1_ID22141\\persona\\persona\\imagenes\\Capturadebolaamarilla.png";
+            string rutaImagen = "C:\\Users\\Licenciaturas\\Source\\Repos\\Isaac1614\\Persona2.1_ID22141\\persona\\persona\\imagenes\\Capturadebolaamarilla.png";
             pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
         }
     }
